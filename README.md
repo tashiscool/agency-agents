@@ -62,6 +62,36 @@ Browse the agents below and copy/adapt the ones you need!
 
 See the [Multi-Tool Integrations](#-multi-tool-integrations) section below for full details.
 
+### Option 4: Industry Agent Packs (Movies, Books, and 28 More)
+
+Need non-software domains? Use the full industry expansion packs in [`industries/`](industries/README.md).
+
+Each pack includes:
+- Industry orchestrator
+- Division-level lead agents
+- Division-level operator agents
+- Activation prompt and division map
+
+### Option 5: AI-Native Film & TV Pipeline Division
+
+Need screenplay-to-visual-beat-to-render workflows? Use the dedicated AI-native film and television division in [`film-tv-ai/`](film-tv-ai/README.md).
+
+This pack includes:
+- Theme and canon agents
+- Screenplay, beat, storyboard, and continuity agents
+- Image, WAN/LTX2 motion, and render-routing agents
+- Dialogue/audio planning, stitch editing, and skeptical final QA
+
+### Option 6: AI-Native Music Video Pipeline Division
+
+Need track-to-timecode-to-edit workflows? Use the dedicated music video division in [`music-video-ai/`](music-video-ai/README.md).
+
+This pack includes:
+- Track bible and timecode mapping agents
+- Performance continuity, motif, and shotboard agents
+- Image, WAN/LTX2 motion, and lyric-performance agents
+- Render routing, rhythm conform, and skeptical final QA
+
 ---
 
 ## 🎨 The Agency Roster
@@ -92,6 +122,9 @@ Building the future, one commit at a time.
 | 🌿 [Git Workflow Master](engineering/engineering-git-workflow-master.md) | Branching strategies, conventional commits, advanced Git | Git workflow design, history cleanup, CI-friendly branch management |
 | 🏛️ [Software Architect](engineering/engineering-software-architect.md) | System design, DDD, architectural patterns, trade-off analysis | Architecture decisions, domain modeling, system evolution strategy |
 | 🛡️ [SRE](engineering/engineering-sre.md) | SLOs, error budgets, observability, chaos engineering | Production reliability, toil reduction, capacity planning |
+| 🧬 [AI Data Remediation Engineer](engineering/engineering-ai-data-remediation-engineer.md) | Self-healing pipelines, air-gapped SLMs, semantic clustering | Fixing broken data at scale with zero data loss |
+| 🔧 [Data Engineer](engineering/engineering-data-engineer.md) | Data pipelines, lakehouse architecture, ETL/ELT | Building reliable data infrastructure and warehousing |
+| 🔗 [Feishu Integration Developer](engineering/engineering-feishu-integration-developer.md) | Feishu/Lark Open Platform, bots, workflows | Building integrations for the Feishu ecosystem |
 
 ### 🎨 Design Division
 
@@ -161,6 +194,14 @@ Growing your audience, one authentic interaction at a time.
 | 🛒 [China E-Commerce Operator](marketing/marketing-china-ecommerce-operator.md) | Taobao, Tmall, Pinduoduo, live commerce | Running multi-platform e-commerce in China |
 | 🎥 [Kuaishou Strategist](marketing/marketing-kuaishou-strategist.md) | Kuaishou, 老铁 community, grassroots growth | Building authentic audiences in lower-tier markets |
 | 🔍 [SEO Specialist](marketing/marketing-seo-specialist.md) | Technical SEO, content strategy, link building | Driving sustainable organic search growth |
+| 📘 [Book Co-Author](marketing/marketing-book-co-author.md) | Thought-leadership books, ghostwriting, publishing | Strategic book collaboration for founders and experts |
+| 🌏 [Cross-Border E-Commerce Specialist](marketing/marketing-cross-border-ecommerce.md) | Amazon, Shopee, Lazada, cross-border fulfillment | Full-funnel cross-border e-commerce strategy |
+| 🎵 [Douyin Strategist](marketing/marketing-douyin-strategist.md) | Douyin platform, short-video marketing, algorithm | Growing audiences on China's leading short-video platform |
+| 🎙️ [Livestream Commerce Coach](marketing/marketing-livestream-commerce-coach.md) | Host training, live room optimization, conversion | Building high-performing livestream e-commerce operations |
+| 🎧 [Podcast Strategist](marketing/marketing-podcast-strategist.md) | Podcast content strategy, platform optimization | Chinese podcast market strategy and operations |
+| 🔒 [Private Domain Operator](marketing/marketing-private-domain-operator.md) | WeCom, private traffic, community operations | Building enterprise WeChat private domain ecosystems |
+| 🎬 [Short-Video Editing Coach](marketing/marketing-short-video-editing-coach.md) | Post-production, editing workflows, platform specs | Hands-on short-video editing training and optimization |
+| 🔥 [Weibo Strategist](marketing/marketing-weibo-strategist.md) | Sina Weibo, trending topics, fan engagement | Full-spectrum Weibo operations and growth |
 
 ### 📊 Product Division
 
@@ -249,6 +290,55 @@ The unique specialists who don't fit in a box.
 | 🗃️ [ZK Steward](specialized/zk-steward.md) | Knowledge management, Zettelkasten, notes | Building connected, validated knowledge bases |
 | 🔌 [MCP Builder](specialized/specialized-mcp-builder.md) | Model Context Protocol servers, AI agent tooling | Building MCP servers that extend AI agent capabilities |
 | 📄 [Document Generator](specialized/specialized-document-generator.md) | PDF, PPTX, DOCX, XLSX generation from code | Professional document creation, reports, data visualization |
+| ⚙️ [Automation Governance Architect](specialized/automation-governance-architect.md) | Automation governance, n8n, workflow auditing | Evaluating and governing business automations at scale |
+| 📚 [Corporate Training Designer](specialized/corporate-training-designer.md) | Enterprise training, curriculum development | Designing training systems and learning programs |
+| 🏛️ [Government Digital Presales Consultant](specialized/government-digital-presales-consultant.md) | China ToG presales, digital transformation | Government digital transformation proposals and bids |
+| ⚕️ [Healthcare Marketing Compliance](specialized/healthcare-marketing-compliance.md) | China healthcare advertising compliance | Healthcare marketing regulatory compliance |
+| 🎯 [Recruitment Specialist](specialized/recruitment-specialist.md) | Talent acquisition, recruiting operations | Recruitment strategy, sourcing, and hiring processes |
+| 🎓 [Study Abroad Advisor](specialized/study-abroad-advisor.md) | International education, application planning | Study abroad planning across US, UK, Canada, Australia |
+| 🔗 [Supply Chain Strategist](specialized/supply-chain-strategist.md) | Supply chain management, procurement strategy | Supply chain optimization and procurement planning |
+
+### 🎬 Film & TV AI Division
+
+AI-native screenplay, image, motion, audio, and editorial workflows with continuity-safe handoffs and skeptical QC.
+
+| Agent | Specialty | When to Use |
+|-------|-----------|-------------|
+| 🎭 [Film & TV AI Orchestrator](film-tv-ai/film-tv-ai-orchestrator.md) | End-to-end AI film pipeline orchestration | Running theme-to-delivery workflows with hard artifact gates |
+| 📚 [Film & TV Theme Bible Architect](film-tv-ai/film-tv-ai-theme-bible-architect.md) | Theme bibles, canon locks, character DBs | Establishing the narrative source of truth before generation |
+| ✍️ [Film & TV Screenplay Expander](film-tv-ai/film-tv-ai-screenplay-expander.md) | Numbered screenplay expansion, bridge scenes, scene JSON | Turning canon into sceneable, machine-readable screenplay structure |
+| 👤 [Film & TV Character Continuity Director](film-tv-ai/film-tv-ai-character-continuity-director.md) | Look locks, wardrobe states, prop anchors, lifecycle continuity | Preventing identity drift across image and motion stages |
+| 🎥 [Film & TV Visual Beat Planner](film-tv-ai/film-tv-ai-visual-beat-planner.md) | Beat decomposition, framing, blocking, sound cues | Converting scenes into renderable visual units |
+| 🧾 [Film & TV Storyboard Director](film-tv-ai/film-tv-ai-storyboard-director.md) | Storyboard coverage and editorial frame planning | Designing board-ready coverage that actually cuts together |
+| 🖼️ [Film & TV Seed Image Prompt Engineer](film-tv-ai/film-tv-ai-seed-image-prompt-engineer.md) | Seed-image and keyframe prompt packages | Building character-stable image prompts for storyboards and conditioning |
+| 🌊 [Film & TV WAN I2V Director](film-tv-ai/film-tv-ai-wan-i2v-director.md) | Image-to-video conditioning strategy | Directing WAN-based motion with realistic stability constraints |
+| 🕺 [Film & TV Motion Reference Director](film-tv-ai/film-tv-ai-motion-reference-director.md) | Pose, path, and choreography reference routing | Planning controlled movement for fragile or precise shots |
+| 🎞️ [Film & TV LTX2 Prompt Compiler](film-tv-ai/film-tv-ai-ltx2-prompt-compiler.md) | WAN/LTX2 motion prompt compilation and clip cards | Turning beat artifacts into render-ready motion packages |
+| 🔀 [Film & TV Model Router & Render Dispatcher](film-tv-ai/film-tv-ai-model-router-render-dispatcher.md) | Model routing, queue manifests, retry classification | Dispatching render jobs safely across models and profiles |
+| 🔊 [Film & TV Dialogue & Audio Beat Planner](film-tv-ai/film-tv-ai-dialogue-audio-beat-planner.md) | Dialogue timing, voice casting, ambience, ADR/TTS maps | Giving audio the same artifact rigor as visuals |
+| ✂️ [Film & TV Stitch Editor](film-tv-ai/film-tv-ai-stitch-editor.md) | Stitch order, transitions, trims, assembly logic | Turning generated assets into readable sequences |
+| 🔎 [Film & TV Continuity Reality Checker](film-tv-ai/film-tv-ai-continuity-reality-checker.md) | Final continuity, sync, pacing, and readiness QA | Blocking false-ready approvals before delivery |
+
+### 🎵 Music Video AI Division
+
+AI-native track, timecode, performance, motion, and rhythm-edit workflows for music videos that need more than loose prompt styling.
+
+| Agent | Specialty | When to Use |
+|-------|-----------|-------------|
+| 🎛️ [Music Video AI Orchestrator](music-video-ai/music-video-ai-orchestrator.md) | End-to-end music video pipeline orchestration | Running track-to-delivery workflows with section, hook, and cut gates |
+| 🎼 [Music Video Track Bible Architect](music-video-ai/music-video-ai-track-bible-architect.md) | Track intent, motif registry, source constraints | Locking the song's visual and editorial source of truth |
+| ⏱️ [Music Video Structure & Timecode Mapper](music-video-ai/music-video-ai-structure-timecode-mapper.md) | Section maps, hook moments, sync-critical timing | Turning a track into machine-readable section and cue artifacts |
+| 👤 [Music Video Performance Continuity Director](music-video-ai/music-video-ai-performance-continuity-director.md) | Performer look locks, wardrobe states, set continuity | Keeping identity and location logic stable across sections |
+| 🌈 [Music Video Visual Motif Planner](music-video-ai/music-video-ai-visual-motif-planner.md) | Section-level visual language and motif recurrence | Designing visual coherence and contrast across the song |
+| 🧾 [Music Video Shotboard Director](music-video-ai/music-video-ai-shotboard-director.md) | Coverage planning and board-ready frames | Building the exact coverage the cut actually needs |
+| 🖼️ [Music Video Seed Image Prompt Engineer](music-video-ai/music-video-ai-seed-image-prompt-engineer.md) | Seed-image and keyframe prompt packages | Creating section-aligned conditioning inputs and stills |
+| 🌊 [Music Video WAN I2V Director](music-video-ai/music-video-ai-wan-i2v-director.md) | Image-to-video performance motion direction | Preserving identity while adding section-appropriate movement |
+| 🕺 [Music Video Motion Reference Director](music-video-ai/music-video-ai-motion-reference-director.md) | Choreography, gesture, and path references | Stabilizing hook gestures and controlled movement shots |
+| 🎞️ [Music Video LTX2 Prompt Compiler](music-video-ai/music-video-ai-ltx2-prompt-compiler.md) | Clip cards and motion prompt compilation | Turning boards and seeds into render-ready motion packs |
+| 🎤 [Music Video Lyric Performance Planner](music-video-ai/music-video-ai-lyric-performance-planner.md) | Lyric timing, lip-sync risk, gesture cues | Mapping phrases and performance intent to exact time windows |
+| 🔀 [Music Video Model Router & Render Dispatcher](music-video-ai/music-video-ai-model-router-render-dispatcher.md) | Render queue routing and retry classification | Dispatching assets safely across models and profiles |
+| ✂️ [Music Video Rhythm Edit Conformer](music-video-ai/music-video-ai-rhythm-edit-conformer.md) | Beat-aware cut assembly and track conform | Aligning clips, transitions, and trims to the song |
+| 🔎 [Music Video Continuity Reality Checker](music-video-ai/music-video-ai-continuity-reality-checker.md) | Final sync, continuity, and readiness QA | Blocking false-ready approvals before delivery |
 
 ### 🎮 Game Development Division
 
@@ -448,7 +538,7 @@ Each agent is designed with:
 
 ## 📊 Stats
 
-- 🎭 **142 Specialized Agents** across 12 divisions
+- 🎭 **144 Specialized Agents** across 12 divisions
 - 📝 **10,000+ lines** of personality, process, and code examples
 - ⏱️ **Months of iteration** from real-world usage
 - 🌟 **Battle-tested** in production environments
@@ -505,8 +595,9 @@ The installer scans your system for installed tools, shows a checkbox UI, and le
   [x]  7)  [*]  Cursor          (.cursor/rules)
   [ ]  8)  [ ]  Aider           (CONVENTIONS.md)
   [ ]  9)  [ ]  Windsurf        (.windsurfrules)
+  [ ] 10)  [ ]  Qwen Code       (~/.qwen/agents)
 
-  [1-9] toggle   [a] all   [n] none   [d] detected
+  [1-10] toggle   [a] all   [n] none   [d] detected
   [Enter] install   [q] quit
 ```
 
@@ -582,8 +673,10 @@ See [integrations/antigravity/README.md](integrations/antigravity/README.md) for
 <summary><strong>Gemini CLI</strong></summary>
 
 Installs as a Gemini CLI extension with one skill per agent plus a manifest.
+On a fresh clone, generate the Gemini extension files before running the installer.
 
 ```bash
+./scripts/convert.sh --tool gemini-cli
 ./scripts/install.sh --tool gemini-cli
 ```
 

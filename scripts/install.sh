@@ -275,7 +275,7 @@ install_claude_code() {
   mkdir -p "$dest"
   local dir f first_line
   for dir in design engineering game-development marketing paid-media sales product project-management \
-              testing support spatial-computing specialized; do
+              testing support spatial-computing specialized film-tv-ai music-video-ai; do
     [[ -d "$REPO_ROOT/$dir" ]] || continue
     while IFS= read -r -d '' f; do
       first_line="$(head -1 "$f")"
@@ -293,7 +293,7 @@ install_copilot() {
   mkdir -p "$dest"
   local dir f first_line
   for dir in design engineering game-development marketing paid-media sales product project-management \
-              testing support spatial-computing specialized; do
+              testing support spatial-computing specialized film-tv-ai music-video-ai; do
     [[ -d "$REPO_ROOT/$dir" ]] || continue
     while IFS= read -r -d '' f; do
       first_line="$(head -1 "$f")"
@@ -325,16 +325,20 @@ install_gemini_cli() {
   local src="$INTEGRATIONS/gemini-cli"
   local dest="${HOME}/.gemini/extensions/agency-agents"
   local count=0
-  [[ -d "$src" ]] || { err "integrations/gemini-cli missing. Run convert.sh first."; return 1; }
+  local manifest="$src/gemini-extension.json"
+  local skills_dir="$src/skills"
+  [[ -d "$src" ]] || { err "integrations/gemini-cli missing. Run ./scripts/convert.sh --tool gemini-cli first."; return 1; }
+  [[ -f "$manifest" ]] || { err "integrations/gemini-cli/gemini-extension.json missing. Run ./scripts/convert.sh --tool gemini-cli first."; return 1; }
+  [[ -d "$skills_dir" ]] || { err "integrations/gemini-cli/skills missing. Run ./scripts/convert.sh --tool gemini-cli first."; return 1; }
   mkdir -p "$dest/skills"
-  cp "$src/gemini-extension.json" "$dest/gemini-extension.json"
+  cp "$manifest" "$dest/gemini-extension.json"
   local d
   while IFS= read -r -d '' d; do
     local name; name="$(basename "$d")"
     mkdir -p "$dest/skills/$name"
     cp "$d/SKILL.md" "$dest/skills/$name/SKILL.md"
     (( count++ )) || true
-  done < <(find "$src/skills" -mindepth 1 -maxdepth 1 -type d -print0)
+  done < <(find "$skills_dir" -mindepth 1 -maxdepth 1 -type d -print0)
   ok "Gemini CLI: $count skills -> $dest"
 }
 
